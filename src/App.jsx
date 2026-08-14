@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -13,17 +13,11 @@ import './App.css';
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Navbar />          {/* Aparece em TODAS as páginas */}
-      <main>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/contact' element={<Contact />} />
-        </Routes>
-      </main>
-      <Footer />          {/* Aparece em TODAS as páginas */}
-    </BrowserRouter>
+    <HashRouter>  {/* URLs ficam como /#/about em vez de /about */}
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+      </Routes>
+    </HashRouter>
   )
 }
