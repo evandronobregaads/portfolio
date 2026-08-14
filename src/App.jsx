@@ -12,13 +12,16 @@ import heroImg from './assets/hero.png';
 import './App.css';
 
 export default function App() {
-  console.log("fgyhjk")
   return (
-    <HashRouter>  {/* URLs ficam como /#/about em vez de /about */}
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-      </Routes>
-    </HashRouter>
+    <div className="min-h-screen bg-background text-foreground flex flex-col">
+      <Navbar />
+      <main className="flex-1 space-y-12 py-8">
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
   )
 }
