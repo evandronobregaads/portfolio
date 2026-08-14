@@ -24,4 +24,4 @@ function Badge({ className, variant, children }) {
 }
 
 // Uso:
-<Badge variant='secondary' className='text-lg'>React</Badge>
+<SkillBadge variant='secondary' className='text-lg'>React</SkillBadge>

@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
+import { SkillBadge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { ExternalLink, Github } from 'lucide-react'
 
@@ -22,7 +22,7 @@ export default function ProjectCard({ title, description, tags, link, repo }) {
       <CardContent>
         <div className='flex flex-wrap gap-2'>
           {tags.map(tag => (
-            <Badge key={tag} variant='secondary'>{tag}</Badge>
+            <key={tag} variant='secondary'>{tag}</SkillBadge>
           ))}
         </div>
       </CardContent>

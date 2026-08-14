@@ -12,6 +12,7 @@ import heroImg from './assets/hero.png';
 import './App.css';
 
 export default function App() {
+  console.log("fgyhjk")
   return (
     <HashRouter>  {/* URLs ficam como /#/about em vez de /about */}
       <Routes>
