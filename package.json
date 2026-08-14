@@ -8,8 +8,8 @@
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "predeploy": "npm run build",   // roda antes do deploy
-    "deploy": "gh-pages -d dist"    // publica a pasta dist/
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
 
 
   },

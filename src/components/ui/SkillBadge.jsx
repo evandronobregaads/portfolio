@@ -1,11 +1,10 @@
 import { cn } from '@/lib/utils'
 
-
 // cn() mescla classes e resolve conflitos
 // Sem cn(): 'text-red-500 text-blue-500' → conflito
 // Com cn(): a última classe ganha corretamente
 
-function SkillBadge({ className, variant, children }) {
+export function SkillBadge({ className, variant, children }) {
   return (
     <span
       className={cn(
