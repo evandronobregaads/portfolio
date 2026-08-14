@@ -19,7 +19,6 @@ export default function ProjectCard({ title, description, tags, link, repo }) {
         <CardDescription>{description}</CardDescription>
       </CardHeader>
 
-
       <CardContent>
         <div className='flex flex-wrap gap-2'>
           {tags.map(tag => (
@@ -27,7 +26,6 @@ export default function ProjectCard({ title, description, tags, link, repo }) {
           ))}
         </div>
       </CardContent>
-
 
       <CardFooter className='gap-2'>
         <Button size='sm' asChild>
